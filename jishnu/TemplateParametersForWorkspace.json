@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "jishnu"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"jishnu-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:jishnu.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://varungattudev1.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "jishnudev.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "jishnudb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "jishnu"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "jishnudev.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "jishnudb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "jishnu"
+		},
+		"jishnu-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://jishnusynaps1.dfs.core.windows.net"
+		}
+	}
+}
